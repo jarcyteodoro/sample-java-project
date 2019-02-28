@@ -4,6 +4,11 @@ pipeline {
      tools {
     	     maven 'MAVEN_DEFAULT'
      }
+
+     environment {
+          DISABLE_AUTH = 'true'
+          DB_ENGINE    = 'sqlite'
+     }
     
      options { timestamps () }
 
