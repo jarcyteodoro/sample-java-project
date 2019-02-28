@@ -10,20 +10,6 @@
     <name>Calculator unit test example in Java</name>
     <description>Simple jUnit test example</description>
 
-    <developers>
-        <developer>
-            <id>stokito</id>
-            <name>Sergey Ponomarev</name>
-            <email>stokito@gmail.com</email>
-            <url>http://stokito.name</url>
-            <timezone>+2</timezone>
-            <properties>
-                <gtalk>stokito@gmail.com</gtalk>
-                <skype>stokito</skype>
-            </properties>
-        </developer>
-    </developers>
-
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
