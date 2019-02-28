@@ -8,12 +8,6 @@ pipeline {
      options { timestamps () }
 
      stages {
-          stage('Clean Workspace') {
-               steps{
-                    deleteDir()
-               }
-          }
-
           stage('Build, JUnit and JaCoCo') { 
                steps {
                     echo "##### Building and Executing Unit Tests #####"
