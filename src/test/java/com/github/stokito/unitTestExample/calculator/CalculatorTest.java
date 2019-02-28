@@ -21,7 +21,7 @@ public class CalculatorTest {
 	public void testMinus() {
 		Calculator calculator = new Calculator();
 		Assert.assertEquals(0, calculator.minus(2, 2));
-	}
+	}	
 
 	@Test
 	public void testDivide() {
