@@ -23,7 +23,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Get next version
         run: |
-          git tag -l v* --sort=-taggerdate | tail -1 | awk -F'v' '{print $2}'
+           git tag -l v* --sort=-taggerdate
+           git tag -l v* --sort=-taggerdate | tail -1 | awk -F'v' '{print $2}'
+           git tag -l v* --sort=-taggerdate | tail -1 | awk -F'v' '{print $2}'
            current_version=`git tag -l v* --sort=-taggerdate | tail -1 | awk -F'v' '{print $2}'`
            echo CURRENT VERSION: $current_version
            major=`echo $current_version | cut -d'.' -f 1`
